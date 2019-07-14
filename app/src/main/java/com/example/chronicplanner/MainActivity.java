@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         login = (Button)findViewById(R.id.login_button);
         register = (Button)findViewById(R.id.register);
         username = (EditText)findViewById(R.id.username);
-        password = (EditText)findViewById(R.id.password);
+        password = (EditText)findViewById(R.id.password1);
 
         login.setOnClickListener(
                 new View.OnClickListener() {
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                             Intent intent = new Intent(MainActivity.this, Dashboard.class);
                             startActivity(intent);
                         } else {
+                            password.setText("");
                             Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
                         }
                     }

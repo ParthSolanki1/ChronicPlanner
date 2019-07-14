@@ -22,4 +22,8 @@
     <style name="primary_link" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textColor">#FB3640</item>
     </style>
+
+    <style name="title_not_logo" parent="title">
+        <item name="android:fontFamily">@font/arvoregular</item>
+    </style>
 </resources>
